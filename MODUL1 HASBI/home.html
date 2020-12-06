@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" ref="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+      body{
+        background-color: rgb(167, 167, 167);
+      
+}
+.col
+{
+    padding-left: 40px;
+    float: right;
+    padding-top: 90px;
+   padding-bottom: 90px;
+    background-color:rgb(124, 124, 124);
+
+
+}
+.col2
+{   
+    padding-top: 90px;
+    text-align: justify;
+    padding-left: 70px;
+   padding-right: 70px;
+	background-color: rgb(218, 218, 218);
+}
+.nav-link{
+    transform: translateX(0.15em);
+}
+#btn1{
+    width:360px;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html" ><img src="logo-ead.png" width="100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="home.html" >Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="profile.html">Profile</a>
+            <a class="nav-link" href="product.html">Product</a>
+          </div>
+        </div>
+      </nav>
+
+        <div class="container">
+            <div class="row">
+              <div class="col">
+    
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AwMeQJ_u73I"  frameborder="50" allowfullscreen></iframe>
+         
+              </div>
+              <div class="col2">
+    <form>
+       
+        <h2>Registrasi Data Pelanggan</h2>
+        <br>
+        <label>Nama Lengkap &nbsp; <input type="text" id="namalengkap" value="" name="nama" placeholder="Masukan Nama Anda"></label>
+    </p>
+    <p>
+        <label>Nomor HP &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="nohp" value="" name="nohp"></label>
+    </p>
+    <p>
+        <label>Alamat &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <input type="text" id="alamat" value="" name="alamat"></label>
+    </p>
+    <p>
+        <label>Pemabayaran &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <a><input type="radio" id="radcash" name="pembayaran" value="cash" >Cash</a>
+        <a><input type="radio" id="radcre" name="pembayaran" value="credit">Credit</a>
+    </p>
+    <p>
+        <label>Kategori Pemesanan &nbsp;</label>
+    <select name="kategori">
+        <option value="komputer">Komputer</option>
+        <option value="Keyboard">Keyboard</option>
+        <option value="Mouse">Mouse</option>
+    </select>
+    </p>
+    <p>
+        <button type="button" id="btn1" class="btn btn-primary btn-sm">Kirim</button>
+        
+    </p>
+    </form>
+            
+     </div>
+        
+     
+   </div>
+   </div>
+
+
+</body>
+</html>
