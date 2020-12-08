@@ -34,9 +34,9 @@
 <div class="card" style="width: 18rem; margin-left:20%;">
   <img src="{{ url('/images/'.$or->img_path) }}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">{{ $or->name }}</h5>
-    <p class="card-text">{{ $or->description }}</p>
-    <h5 class="card-title">${{ $or->price }}</h5>
+    <h5 class="card-title">{{ ->name }}</h5>
+    <p class="card-text">{{ ->description }}</p>
+    <h5 class="card-title">${{ ->price }}</h5>
     <a type="submit" class="btn btn-success">Order Now</a>
   </div>
 </div>

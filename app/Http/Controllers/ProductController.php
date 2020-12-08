@@ -40,10 +40,10 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $product = new Products;
-        $product->name = $request->name;
-        $product->price = $request->price;
-        $product->description = $request->desc;
-        $product->stock = $request->stock;
+        $product->name = $request->;
+        $product->price = $request->;
+        $product->description = $request->;
+        $product->stock = $request->;
         $product->img_path = $request->file;
         $product->save();
         $products = DB::table('products')->get();
@@ -98,7 +98,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        $products = Product::find($id);
+        $products = Products::find($id);
         $products->delete();
  
          return redirect('product.listproduct');

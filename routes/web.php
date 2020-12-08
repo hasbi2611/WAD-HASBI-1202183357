@@ -24,7 +24,7 @@ Route::get('/history', function () {
 //Route::get('product', 'ProductController@index');
 Route::get('/product', 'App\Http\Controllers\HomeController@index');
 Route::get('/order', 'App\Http\Controllers\HomeController@indexorder');
-Route::get('/history', 'App\Http\Controllers\HomeController@indexhistory');
+Route::get('/', 'App\Http\Controllers\HomeController@indexhistory');
 Route::get('/product.inputproduct', 'App\Http\Controllers\ProductController@create');
 Route::get('/order.inputorder', 'App\Http\Controllers\OrderController@create');
 Route::get('/order.inputorder', 'App\Http\Controllers\OrderController@index');
